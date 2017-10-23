@@ -661,7 +661,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var RespiratoryArrestComponent = (function () {
     function RespiratoryArrestComponent() {
-        this.respiratory_arrest_instruction_image = '../../../assets/images/respiratoryarrest.png';
+        this.respiratory_arrest_instruction_image = './assets/images/respiratoryarrest.png';
     }
     RespiratoryArrestComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Component */])({
@@ -883,7 +883,7 @@ var HeaderComponent = (function () {
         this.router = router;
         this.title = 'Akutvagn 1';
         this.hideInPaths = ['/', '/hlr'];
-        this.leftArrow = '../assets/images/left-arrow.jpg';
+        this.leftArrow = './assets/images/left-arrow.jpg';
         this.startClock();
     }
     /**
@@ -1296,8 +1296,8 @@ var HlrstepComponent = (function () {
         this.timerService = timerService;
         this.changeStepNotifierEmitter = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["y" /* EventEmitter */]();
         // BOLT BUTTON
-        this.boltFilledPath = '../../../../assets/images/bolt-filled-small.png';
-        this.boltOutlinePath = '../../../../assets/images/bolt-outline-small.png';
+        this.boltFilledPath = './assets/images/bolt-filled-small.png';
+        this.boltOutlinePath = './assets/images/bolt-outline-small.png';
         this.boltFullPath = this.boltOutlinePath;
     }
     /**
@@ -1879,7 +1879,7 @@ module.exports = "<div class=\"keypad-frame\">\n  <div class=\"row\">\n    <inpu
 /***/ 574:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"table-responsive\">\n  <table class=\"table table-striped\">\n    <thead>\n      <tr>\n        <th>Tid</th>\n        <th>DEF.</th>\n        <th></th>\n        <th>Information</th>\n      </tr>\n    </thead>\n    <tbody>\n      <!-- Generates a list of history rows -->\n      <tr *ngFor=\"let hlritem of hlrItems\" [ngClass]=\"getRulerCSS(hlritem.ruler)\">\n        <th scope=\"row\">{{hlritem.timestamp}}</th>\n        <td>\n          <img *ngIf=\"hlritem.defibrilate == defib.TRUE\" class=\"icon-format\" src=\"../../assets/images/bolt-filled-small.png\"/>\n          <img *ngIf=\"hlritem.defibrilate == defib.FALSE\" class=\"icon-format\" src=\"../../assets/images/bolt-outline-small.png\"/>\n        </td>\n        <th scope=\"row\">{{hlritem.compressions}}</th>\n        <td>{{hlritem.information}}</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n"
+module.exports = "<div class=\"table-responsive\">\n  <table class=\"table table-striped\">\n    <thead>\n      <tr>\n        <th>Tid</th>\n        <th>DEF.</th>\n        <th></th>\n        <th>Information</th>\n      </tr>\n    </thead>\n    <tbody>\n      <!-- Generates a list of history rows -->\n      <tr *ngFor=\"let hlritem of hlrItems\" [ngClass]=\"getRulerCSS(hlritem.ruler)\">\n        <th scope=\"row\">{{hlritem.timestamp}}</th>\n        <td>\n          <img *ngIf=\"hlritem.defibrilate == defib.TRUE\" class=\"icon-format\" src=\"./assets/images/bolt-filled-small.png\"/>\n          <img *ngIf=\"hlritem.defibrilate == defib.FALSE\" class=\"icon-format\" src=\"./assets/images/bolt-outline-small.png\"/>\n        </td>\n        <th scope=\"row\">{{hlritem.compressions}}</th>\n        <td>{{hlritem.information}}</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n"
 
 /***/ }),
 
